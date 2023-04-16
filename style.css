@@ -1,0 +1,221 @@
+/* Reset  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    background-color: #0c111b;
+    position: relative;
+    font-family: roboto,sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* ====================================================== */
+
+/* header starts  */
+.navbar{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 4%;
+    background-color: #0c111b;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+}
+.brand-logo{
+    height: 60px;
+}
+.nav-links{
+    margin-top: 10px;
+    display: flex;
+}
+.nav-items a{
+    text-decoration: none;
+    margin-left: 20px;
+    text-transform: capitalize;
+    color: #fff;
+    opacity: 0.9;
+}
+.navbar .right-container{
+    display: block;
+    margin-left: auto;
+}
+.search-box{
+    border: none;
+    border-bottom: 1px solid #aaa;
+    background-color: transparent;
+    outline: none;
+    height: 30px;
+    color: #fff;
+    width: 250px;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    transition: .5s;
+}
+.search-box:focus{
+    width: 480px;
+    border-color: #1f80e0;
+}
+.sub-btn{
+    background-color: #1f80e0;
+    height: 30px;
+    padding: 0 20px;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    margin: 0 10px;   
+}
+.login-link{
+    color: #fff;
+    opacity: 0.9;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+}
+/* header ends  */
+
+/* ====================================================== */
+
+/* hero-section starts  */
+.hero-container{
+    overflow: hidden;
+    /* background-color: red;  */
+}
+.hero-container video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    z-index: -1;
+    background-color: black; /* set a black background color */
+    opacity: 0.5; 
+    object-fit: cover;
+    
+}
+.hero-content{
+    position: absolute;
+    top: 200px;
+    left: 120px;
+    /* background-color: antiquewhite; */
+    width: 400px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+.hero-content .movieDetiles{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    margin-right: 119px;
+}
+.hero-content .movielangs{
+    display: flex;
+    justify-content: space-around;
+}
+.hero-content .sw-btn{
+    padding: 22px 99px;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    font-weight: 900;
+    font-size: 13px;
+    color: white;
+    background-color:rgba(230, 233, 236, 0.3);
+  
+}
+.hero-content .plus-btn{
+    padding: 22px 22px;
+    color: white;
+    margin-left: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color:rgba(230, 233, 236, 0.3);
+}
+.sw-btn:hover , .plus-btn:hover{
+    opacity: 0.8;
+}
+/* hero-section ends  */
+
+/* ====================================================== */
+
+/* movieCards-section starts  */
+.moviecards-mainContainer{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(12, 17, 27, 0) 0%,rgb(12, 17, 27) 90%);
+}
+.moviecards-mainContainer .main-innerContainer{
+    width: 90%;
+    margin: 0 auto;
+    height: 100vh;
+    background-color:linear-gradient(to bottom, rgba(12, 17, 27, 9) 0%,rgb(12, 17, 27) 90%);
+}
+
+.cardsContainer{
+    display: flex;
+    position: absolute;
+    top: 70%;
+    width: 90%;
+    margin: 0 auto; 
+}
+.cardsContainer .card{
+    border-radius: 12px;
+    overflow: hidden;
+    width: 390px;
+    height: 250px;
+    margin-left: 12px;
+}
+.card img{
+    width: 100%;
+}
+/* movieCards-section ends  */
+.blank-container{
+    width: 100%;
+    height: 67vh;
+    background-color: #0c111b;
+}
+
+.footerContainer{
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 120px;
+    background-color: #0c111b;
+    
+}
+.footerInnerContainer{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: #0c111b;
+}
+.cpoyRight{
+    padding-top: 20px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #0c111b;
+    display: flex;
+    justify-content: space-between;
+}
+.cpoyRight .leftSide p{
+    color: #8c8989;
+    font-size: 12px;
+}
